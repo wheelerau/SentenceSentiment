@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import svm
 from sklearn.metrics import classification_report
 
-data_dir = 'C:\Temp\SentenceSentiment'
+data_dir = 'C:\\temp\\SentenceSentiment'
 classes = ['pos', 'neg']
 
 # Read the data
@@ -55,5 +55,8 @@ live_data.append("From what I understand this game was a kickstarter project whi
 live_data.append("I've been playing for a little bit now and I absolutely love this game. I could see how it's not for everyone but, I'm in love. I haven't run into any bugs yet either. I'm not usually very interested in the story of a game, but, I'm so into this story and setting. I hope that the issues that others are pointing out get addressed so that this game can continue to grow.")
 live_data.append("I went into this expecting an okay game with a fantastic story, interesting mechanics, and a ton of glitches. What I got was a great game with a fantastic story, interesting mechanics, and an average amount of glitches. This game isn't as broken as people say. The world is easily the best part, but the stealth mechanic is strong on its own. They even gave Joy a system that's more than 'Don't take it'. You actually have to consider when it's necessary to use Joy and when you can get away without it, while also worrying about overdose/withdrawal.")
 live_data.append("We Happy Few is a game a REALLY wanted to like, It's one I've been excited for since it's reveal with promise of it being a spiritual successor to Bioshock. Unfortunately it wasn't, In fact the game is barely playable at all. It's full of bugs and glitches at every turn, and I'm not normally one to let these things get to me, but it was so game breaking. ")
+live_data.append("Complete garbage, slower than dirt. 1 month into using and its all messed up.")
+live_data.append("Is a crappy computer as soon as i got it, it had a screen that that said it needed to be repair, mailed the seller and they have not responded")
+live_data.append("This product is the perfect tool if you need something quick, durable and on the go! I will buy a memory card and/or an external hard drive as well. This is the tool i use when i am moving around the office or the house working and cant sit down. Power life is great. take your time with this product before giving a bad review. FOLLOW THE SET UP STEPS !!!!")
 
 print(classifier_liblinear.predict(vectorizer.transform(live_data)))
